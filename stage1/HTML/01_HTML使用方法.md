@@ -27,7 +27,7 @@
 
 > HTML代码就是这样的内容，它是一门标记语言，里面的每一个像`<html></html>`这样的东西被称为`标记`，也叫`标签`
 
-`<!DOCTYPE HTML>`
+***```<!DOCTYPE HTML>```***
 
 HTML的开头需要由一个HTML声明开始HTML新标准HTML5中的声明相对简单，只需要使用`<!DOCTYPE HTML>`即可
 
