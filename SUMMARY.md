@@ -17,7 +17,7 @@
     * [CSS兼容性](stage1/CSS/CSS兼容性.md)
 * [第二阶段](stage2/README.md)
   * [JavaScript](stage2/JavaScript/README.md)
-    * [数据类型](stage2/JavaScript/README.md)
+    * [数据类型](stage2/JavaScript/01_数据类型.md)
     * [流程控制语句](stage2/JavaScript/README.md)
     * [函数](stage2/JavaScript/README.md)
     * [内置对象](stage2/JavaScript/README.md)
