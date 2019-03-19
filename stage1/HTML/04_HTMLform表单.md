@@ -28,7 +28,7 @@ form elements
 
 **&lt;input&gt;** 标签根据不同的  **type** 属性，可以变化为多种形态。
 
-####type类型：text
+#### type类型：text
 
 text 定义常规文本输入。
 
@@ -53,7 +53,7 @@ text 定义常规文本输入。
 
 ****
 
-####type类型：radio
+#### type类型：radio
 radio 定义单选按钮输入（选择多个选择之一）
 ```
 <form>
@@ -74,7 +74,7 @@ radio 定义单选按钮输入（选择多个选择之一）
 
 ****
 
-####type类型：checkbox
+#### type类型：checkbox
 
 复选框允许用户在有限数量的选项中选择零个或多个选项。
 
@@ -92,7 +92,7 @@ radio 定义单选按钮输入（选择多个选择之一）
 </form> 
 
 ****
-####type类型：password
+#### type类型：password
 
 password定义密码框
 
@@ -122,7 +122,7 @@ password定义密码框
 
 ****
 
-####type类型：button
+#### type类型：button
 
 button 定义按钮
 
@@ -133,7 +133,7 @@ button 定义按钮
 
 ****
 
-####type类型：submit
+#### type类型：submit
 
 定义提交表单数据至表单处理程序的按钮。
 
@@ -163,7 +163,7 @@ Last name:<br>
 
 ****
 
-###&lt;select&gt; 元素（下拉列表）
+### &lt;select&gt; 元素（下拉列表）
 
 &lt;select&gt;标签定义下拉菜单
 
@@ -262,7 +262,7 @@ Last name:<br>
 
 
 ****
-###表单元素的属性
+### 表单元素的属性
 
 |属性名|描述|
 |:---|:------|
@@ -273,7 +273,7 @@ Last name:<br>
 |size|属性规定输入字段的尺寸（以字符计）：|
 |maxlength|maxlength 属性规定输入字段允许的最大长度：|
 
-###name 属性
+### name 属性
 
 如果要正确地被提交，每个输入字段必须设置一个 name 属性。
 
@@ -295,7 +295,7 @@ Last name:<br>
 
 ****
 
-###value 属性
+### value 属性
 
 value 属性规定输入字段的初始值
 
@@ -315,7 +315,7 @@ value 属性规定输入字段的初始值
 
 ****
 
-###readonly 属性
+### readonly 属性
 
 readonly 属性规定输入字段为只读（不能修改）：
 
@@ -347,7 +347,7 @@ readonly 属性规定输入字段为只读（不能修改）：
 
 ****
 
-###disabled 属性
+### disabled 属性
 
 disabled 属性规定输入字段是禁用的。
 
@@ -379,7 +379,7 @@ disabled 属性规定输入字段是禁用的。
 
 ****
 
-###size 属性
+### size 属性
 
 size 属性规定输入框内容可见宽度（以字符计，与maxlength区别是size可以输入无限多的字符，而maxlength有长度限制）：
 
@@ -406,7 +406,7 @@ size 属性规定输入框内容可见宽度（以字符计，与maxlength区别
 
 ****
 
-###maxlength 属性
+### maxlength 属性
 
 maxlength 属性规定输入字段允许的最大长度：
 
@@ -436,7 +436,7 @@ maxlength 属性规定输入字段允许的最大长度：
 
 *********
 
-#form标签的属性
+# form标签的属性
 
 |属性名|描述|
 |:---|:------|
@@ -446,7 +446,7 @@ maxlength 属性规定输入字段允许的最大长度：
 |autocomplete(H5新增)|属性规定表单或输入字段是否应该自动完成。当自动完成开启，浏览器会基于用户之前的输入值自动填写值。|
 |novalidate(H5新增)|规定在提交表单时不对表单数据进行验证。（进本用不到）|
 
-###action 属性
+### action 属性
 
 action 属性定义在提交表单时执行的动作。
 
@@ -484,7 +484,7 @@ Last name:<br>
 
 ****
 
-###Method 属性
+### Method 属性
 
 method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST，默认是get）：
 
@@ -498,7 +498,7 @@ method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST，默�
 
 ****
 
-###Name 属性
+### Name 属性
 
 如果要正确地被提交，每个输入字段必须设置一个 name 属性。
 
