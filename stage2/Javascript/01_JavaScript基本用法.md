@@ -46,7 +46,6 @@ index.html
 </body>
 </html>
 ```
-
 demo.js
 ```javascript 
 alert('这是我的第一个javascript程序');
