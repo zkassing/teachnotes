@@ -1,55 +1,30 @@
-# JavaScript用法
+# JS 在页面中的位置
 
-> HTML中的脚本必须位于`<script></script>`标签之间<br>脚本可被放置在HTML页面的`<body>`和`<head>`部分中
+> 我们可以将`JavaScript`代码放在`html`文件中任何位置
+
+> 但是我们一般放在网页的`head`或者`body`部分。
+
+## 放在`<head>`部分
+
+最常用的方式是在页面中 head 部分放置`<script>`元素，浏览器解析 head 部分就会执行这个代码，然后才解析页面的其余部分。
+
+## 放在`<body>`部分
+
+JavaScript 代码在网页读取到该语句的时候就会执行。
 
 ```html
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>如何使用javascript</title>
-  <!-- 
-  <script></script>
-  -->
-</head>
-<body>
-  <!-- 出于性能考虑，script标签在大多数时候应该放置在body的闭合标签之前 -->
-  <script>
-    alert('hello world');
-  </script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>js使用方式3：外部js</title>
+    </head>
+    <body>
+        <input type="button" value="点击" onclick="hello()" />
+        <!-- 很多html页面都可以调用helloworld.js页面 -->
+        <script src="./helloworld.js" type="text/javascript" charset="utf-8"></script>
+    </body>
 </html>
 ```
 
-## JavaScript编码位置
-
-> JavaScript有两个编码位置，一种是直接将代码写在script标签中，一种是新建单独的js文件存储JavaScript代码，然后在script标签中利用`src`引入
-```
-- Project
-  - js
-    - demo.js
-  - index.html
-```
-
-如果有以上结构，我们可以在HTML中引入对应的js
-
-index.html
-```html
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>如何引入外部js</title>
-</head>
-<body>
-  <script src="./js/demo.js"></script>
-</body>
-</html>
-```
-
-demo.js
-```javascript 
-alert('这是我的第一个javascript程序');
-```
-
-***如果页面上正确弹出对应的对话框，则你的代码就算运行成功了！***
+> **_注意：位置的不同会影响到实现效果。_**
