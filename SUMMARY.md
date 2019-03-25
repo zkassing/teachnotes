@@ -42,7 +42,7 @@
     * [前后端数据交互](stage2/前端数据交互/README.md)
         * [Ajax简介](stage2/前端数据交互/README.md)
         * [Ajax请求方式](stage2/前端数据交互/README.md)
-        * [EJS前端模板引擎](stage2/前端数据交互/README.md)
+        * [EJS前端模板引擎](stage2/前端数据交互/03_EJS模板引擎.md)
         * [PHP接口开发及请求](stage2/前端数据交互/04_PHP接口开发及请求.md)
         * [CORS/JSONP](stage2/前端数据交互/05_CROS_JSONP.md)
         * [Cookie](stage2/前端数据交互/README.md)
