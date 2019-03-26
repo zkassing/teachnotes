@@ -39,13 +39,13 @@ Desktop
 ```
 <input type="file" id="input">
 ```
->>通过文件API，我们可以访问FileList，其中FileList由代表用户所选文件的File对象组成
+> 通过文件API，我们可以访问FileList，其中FileList由代表用户所选文件的File对象组成
 
->>使用传统的DOM选择器访问一个被选择的文件。
+> 使用传统的DOM选择器访问一个被选择的文件。
 ```
 var selectedFile = document.getElementById('input').files[0];
 ```
->>如果你想让用户选择多个文件，只需在input元素上使用multiple属性：
+> 如果你想让用户选择多个文件，只需在input元素上使用multiple属性：
 ```
     <input type="file" id="fileElem" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)">
     <label for="fileElem">Select some files</label>
@@ -111,7 +111,7 @@ request.open("POST", "submitform.php");
 request.send(new FormData(formElement));
 ```
 
->>你还可以在创建一个包含Form表单数据的FormData对象之后和发送请求之前，附加额外的数据到FormData对象里，像这样：
+> 你还可以在创建一个包含Form表单数据的FormData对象之后和发送请求之前，附加额外的数据到FormData对象里，像这样：
 
 ```
 var formElement = document.querySelector("form");
@@ -134,7 +134,7 @@ request.send(formData);
 </form>
 <div></div>
 ```
->>然后使用下面的代码发送请求：
+> 然后使用下面的代码发送请求：
 ```
 var form = document.forms.namedItem("fileinfo");
 form.addEventListener('submit', function(ev) {
