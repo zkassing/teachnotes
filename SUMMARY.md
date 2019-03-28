@@ -64,7 +64,7 @@
         * [FileReader/FormData](stage3/HTML5/02-FileReader_FormData.md)
         * [History API](stage3/HTML5/README.md)
         * [SVG](stage3/HTML5/04-svg.md)
-        * [canvas](stage3/HTML5/README.md)
+        * [canvas](stage3/HTML5/05-canvas.md)
     * [CSS3](stage3/CSS3/README.md)
         * [CSS3过渡](stage3/HTML5/README.md)
         * [CSS3动画](stage3/HTML5/README.md)
