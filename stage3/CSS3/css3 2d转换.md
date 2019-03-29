@@ -137,7 +137,7 @@ transform-origin | 允许你改变被转换元素的位置。|3
 ***
 ## 2D Transform 方法
 
-属性|描述
+函数|描述
 --|--:
 matrix(n,n,n,n,n,n)	| 定义 2D 转换，使用六个值的矩阵。
 translate(x,y) | 定义 2D 转换，沿着 X 和 Y 轴移动元素。
