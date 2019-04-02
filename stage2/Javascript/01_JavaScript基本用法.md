@@ -1,54 +1,66 @@
-# JavaScript用法
+# JS使用方法
 
-> HTML中的脚本必须位于`<script></script>`标签之间<br>脚本可被放置在HTML页面的`<body>`和`<head>`部分中
+HTML 中的脚本必须位于 \<script> 与 \</script> 标签之间。脚本可被放置在 HTML 页面的 \<body> 和 \<head> 部分中。
 
-```html
-<!DOCTYPE HTML>
+## \<script> 标签
+如需在 HTML 页面中插入 JavaScript，请使用 \<script> 标签。\<script> 和 \</script> 会告诉 JavaScript 在何处开始和结束。\<script> 和 \</script> 之间的代码行包含了JavaScript
+```javascript
+<script>
+alert("My First JavaScript");
+</script>
+```
+## \<head> 中的 JavaScript 函数
+```javascript
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>如何使用javascript</title>
-  <!-- 
-  <script></script>
-  -->
-</head>
-<body>
-  <!-- 出于性能考虑，script标签在大多数时候应该放置在body的闭合标签之前 -->
-  <script>
-    alert('hello world');
-  </script>
-</body>
+    <head>
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML="My First JavaScript Function";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>My Web Page</h1>
+        <p id="demo">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+    </body>
 </html>
 ```
 
-## JavaScript编码位置
-
-> JavaScript有两个编码位置，一种是直接将代码写在script标签中，一种是新建单独的js文件存储JavaScript代码，然后在script标签中利用`src`引入
-```
-- Project
-  - js
-    - demo.js
-  - index.html
-```
-
-如果有以上结构，我们可以在HTML中引入对应的js
-
-index.html
-```html
-<!DOCTYPE HTML>
+## \<body> 中的 JavaScript 函数
+提示：我们把 JavaScript 放到了页面代码的底部，这样就可以确保在 \<p> 元素创建之后再执行脚本。
+```javascript
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>如何引入外部js</title>
-</head>
-<body>
-  <script src="./js/demo.js"></script>
-</body>
+    <head>
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <h1>My Web Page</h1>
+        <p id="demo">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+        
+        <script>
+            //如果要在body中使用JavaScript，我们把 JavaScript 放到了页面代码的底部，这样就可以确保在 p 元素创建之后再执行脚本
+            function myFunction(){
+                document.getElementById("demo").innerHTML="My First JavaScript Function";
+            }
+        </script>
+    </body>
 </html>
 ```
-demo.js
-```javascript 
-alert('这是我的第一个javascript程序');
+## 外部的 JavaScript
+也可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。外部 JavaScript 文件的文件扩展名是 .js。如需使用外部文件，请在\<script> 标签的 "src" 属性中设置该 .js 文件
+
+提示：外部脚本不能包含 \<script> 标签。
+
+```javascript
+<!DOCTYPE html>
+<html>
+    <body>
+        <script src="myScript.js"></script>
+    </body>
+</html>
 ```
 
-***如果页面上正确弹出对应的对话框，则你的代码就算运行成功了！***
